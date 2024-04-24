@@ -17,9 +17,23 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background-image: url('edited.gif'); /* Replace 'your-gif-file.gif' with the path to your GIF file */
+      background-image: url('edited.gif'); /* Replace 'your-animated-gif.gif' with the path to your animated GIF file */
       background-size: cover; /* Cover the entire background */
       background-repeat: no-repeat; /* Prevent the background from repeating */
+      animation: animateBackground 10s infinite; /* Adjust the animation duration and timing as needed */
+    }
+
+    /* Keyframes for the background animation */
+    @keyframes animateBackground {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
     }
 
     .button-container {
