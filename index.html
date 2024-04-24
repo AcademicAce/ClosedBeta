@@ -11,13 +11,15 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh; /* Changed height to min-height for better centering */
+      min-height: 100vh;
+      background-image: url('edited.gif'); /* Replace 'your-gif-file.gif' with the path to your GIF file */
+      background-size: cover; /* Cover the entire background */
+      background-repeat: no-repeat; /* Prevent the background from repeating */
     }
 
     .button-container {
@@ -33,7 +35,7 @@
       text-decoration: none;
       border-radius: 30px;
       color: #fff;
-      background-color: #3498db; /* Default blue color */
+      background-color: #3498db;
       transition: background-color 0.3s ease, transform 0.2s ease;
       cursor: pointer;
       margin: 10px;
@@ -41,7 +43,7 @@
     }
 
     .rounded-button:hover {
-      background-color: #2980b9; /* Darker shade of blue */
+      background-color: #2980b9;
       transform: scale(1.05);
     }
 
@@ -51,7 +53,7 @@
 
     /* Make the Home button purple */
     .home-button {
-      background-color: #8a2be2; /* Purple color */
+      background-color: #8a2be2;
     }
   </style>
 </head>
@@ -59,13 +61,13 @@
   <div class="button-container">
     <!-- Replace the Proxy button with Discord button -->
     <a href="#" class="rounded-button"><i class="fab fa-discord"></i> Discord</a>
-    <br> <!-- Line break to separate the buttons -->
+    <br>
     <!-- Apply 'home-button' class to make the Home button purple and center it -->
     <a href="HTML/home.html" class="rounded-button home-button"><i class="fas fa-home"></i> Home</a>
-    <br> <!-- Line break to separate the buttons -->
+    <br>
     <!-- Update the href attribute to point to the GitHub repository -->
     <a href="https://github.com/AcademicAce/-AcademicAce-" class="rounded-button"><i class="fab fa-github"></i> Github</a>
-    <a href="HTML/homebeta.html" class="rounded-button"><i class="fas fa home"></i>Beta</a>
+    <a href="HTML/homebeta.html" class="rounded-button"><i class="fas fa-home"></i> Beta</a>
   </div>
 
   <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
