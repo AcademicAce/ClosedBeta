@@ -17,23 +17,8 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background-image: url('edited.gif'); /* Replace 'your-animated-gif.gif' with the path to your animated GIF file */
-      background-size: cover; /* Cover the entire background */
-      background-repeat: no-repeat; /* Prevent the background from repeating */
-      animation: animateBackground 10s infinite; /* Adjust the animation duration and timing as needed */
-    }
-
-    /* Keyframes for the background animation */
-    @keyframes animateBackground {
-      0% {
-        background-position: 0% 0%;
-      }
-      50% {
-        background-position: 100% 100%;
-      }
-      100% {
-        background-position: 0% 0%;
-      }
+      background-color: #000; /* Dark black background */
+      color: #ddd; /* Light gray text color */
     }
 
     .button-container {
@@ -48,16 +33,17 @@
       text-align: center;
       text-decoration: none;
       border-radius: 30px;
-      color: #fff;
-      background-color: #3498db;
+      color: #666; /* Medium gray button text color */
+      background-color: #333; /* Dark gray button background color */
       transition: background-color 0.3s ease, transform 0.2s ease;
       cursor: pointer;
       margin: 10px;
       overflow: hidden;
+      font-family: "Discord"; /* Discord font */
     }
 
     .rounded-button:hover {
-      background-color: #2980b9;
+      background-color: #555; /* Slightly lighter shade of gray on hover */
       transform: scale(1.05);
     }
 
@@ -67,7 +53,7 @@
 
     /* Make the Home button purple */
     .home-button {
-      background-color: #8a2be2;
+      background-color: #8a2be2; /* Purple background for Home button */
     }
   </style>
 </head>
