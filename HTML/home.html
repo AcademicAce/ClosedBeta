@@ -11,69 +11,73 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #1f1f1f; /* Dark background */
+      background-color: #f0f0f0; /* Light background */
       margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: flex-start; /* Align buttons to the left */
-      align-items: center;
-      height: 100vh;
+      padding: 20px; /* Add padding to create space around the content */
     }
 
-    .button-container {
-      text-align: left; /* Align buttons text to the left */
-      margin-left: 50px; /* Add margin-left to create space from the left side */
+    .category {
+      margin-bottom: 20px; /* Add margin-bottom to create space between categories */
     }
 
-    .rounded-button {
-      display: inline-block;
-      padding: 0; /* Remove padding */
-      width: 250px; /* Set button width */
-      height: 250px; /* Set button height */
-      font-size: 18px;
+    .category-name {
+      font-size: 24px;
       font-weight: bold;
-      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .game-dropdown {
+      margin-bottom: 10px; /* Add margin-bottom to create space between games */
+    }
+
+    .game-link {
+      display: block;
+      padding: 8px 16px;
+      color: #333;
       text-decoration: none;
-      border-radius: 15px; /* Keep rounded corners */
-      color: #fff;
-      background-color: #454545; /* Dark button background */
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      cursor: pointer;
-      margin: 10px 0; /* Add margin-top and margin-bottom */
-      overflow: hidden;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      transition: background-color 0.3s ease;
     }
 
-    .rounded-button:hover {
-      background-color: #363636; /* Dark button hover color */
-      transform: scale(1.05);
-    }
-
-    .rounded-button i {
-      margin-right: 8px;
-    }
-
-    /* Style for the home button */
-    .home-button {
-      background-color: purple; /* Original home button color */
+    .game-link:hover {
+      background-color: #f0f0f0;
     }
   </style>
 </head>
 <body>
-  <div class="button-container">
-    <!-- Home button with class "home-button" -->
-    <a href="index.html" class="rounded-button home-button"><i class="fas fa-home"></i> Menu</a>
-    <!-- CoreBall button -->
-    <a href="Extra/Games/CoreBall/nav.apusapps.com/br/game/coreball/index.html" class="rounded-button"><i class="fas fa-gamepad"></i> CoreBall</a>
-    <!-- Game buttons -->
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game1</a>
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game2</a>
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game3</a>
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game4</a>
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game5</a>
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game6</a>
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game7</a>
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game8</a>
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game9</a>
+  <div class="container">
+    <div class="category">
+      <div class="category-name">NEW!</div>
+      <div class="game-dropdown">
+        <a href="#" class="game-link">CoreBall</a>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category-name">Category 1</div>
+      <div class="game-dropdown">
+        <a href="#" class="game-link">Game1</a>
+        <a href="#" class="game-link">Game2</a>
+        <a href="#" class="game-link">Game3</a>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category-name">Category 2</div>
+      <div class="game-dropdown">
+        <a href="#" class="game-link">Game4</a>
+        <a href="#" class="game-link">Game5</a>
+        <a href="#" class="game-link">Game6</a>
+      </div>
+    </div>
+    <div class="category">
+      <div class="category-name">Category 3</div>
+      <div class="game-dropdown">
+        <a href="#" class="game-link">Game7</a>
+        <a href="#" class="game-link">Game8</a>
+        <a href="#" class="game-link">Game9</a>
+      </div>
+    </div>
   </div>
 
   <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
