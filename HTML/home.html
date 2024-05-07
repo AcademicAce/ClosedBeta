@@ -11,53 +11,64 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
+      background-color: #1f1f1f; /* Dark background */
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start; /* Align buttons to the left */
       align-items: center;
       height: 100vh;
     }
 
     .button-container {
-      text-align: center;
+      text-align: left; /* Align buttons text to the left */
+      margin-left: 20px; /* Add margin-left to create space from the left side */
     }
 
     .rounded-button {
       display: inline-block;
-      padding: 15px 30px;
+      padding: 0; /* Remove padding */
+      width: 150px; /* Set button width */
+      height: 50px; /* Set button height */
       font-size: 18px;
       font-weight: bold;
       text-align: center;
       text-decoration: none;
-      border-radius: 30px;
+      border-radius: 15px; /* Keep rounded corners */
       color: #fff;
-      background-color: #3498db;
+      background-color: #454545; /* Dark button background */
       transition: background-color 0.3s ease, transform 0.2s ease;
       cursor: pointer;
-      margin: 10px;
+      margin: 10px 0; /* Add margin-top and margin-bottom */
       overflow: hidden;
     }
 
     .rounded-button:hover {
-      background-color: #2980b9;
+      background-color: #363636; /* Dark button hover color */
       transform: scale(1.05);
     }
 
     .rounded-button i {
       margin-right: 8px;
     }
+
+    /* Style for the home button */
+    .home-button {
+      background-color: purple; /* Original home button color */
+    }
   </style>
 </head>
 <body>
   <div class="button-container">
+    <!-- Home button with class "home-button" -->
+    <a href="index.html" class="rounded-button home-button"><i class="fas fa-home"></i> Menu</a>
+    <!-- CoreBall button -->
     <a href="Extra/Games/CoreBall/nav.apusapps.com/br/game/coreball/index.html" class="rounded-button"><i class="fas fa-gamepad"></i> CoreBall</a>
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game</a>
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game</a>
+    <!-- Game buttons -->
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game1</a>
     <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game2</a>
     <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game3</a>
-    <a href="index.html" class="rounded-button"><i class="fas fa-home"></i> Menu</a>
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game4</a>
     <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game5</a>
     <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game6</a>
     <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game7</a>
