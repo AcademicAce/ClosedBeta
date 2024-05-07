@@ -11,7 +11,7 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
+      background-color: #1f1f1f; /* Dark background */
       margin: 0;
       padding: 0;
       display: flex;
@@ -27,14 +27,16 @@
 
     .rounded-button {
       display: inline-block;
-      padding: 15px 30px;
+      padding: 0; /* Remove padding */
+      width: 100px; /* Set button width */
+      height: 100px; /* Set button height */
       font-size: 18px;
       font-weight: bold;
       text-align: center;
       text-decoration: none;
-      border-radius: 15px;
+      border-radius: 15px; /* Keep rounded corners */
       color: #fff;
-      background-color: #3498db;
+      background-color: #454545; /* Dark button background */
       transition: background-color 0.3s ease, transform 0.2s ease;
       cursor: pointer;
       margin: 10px;
@@ -42,7 +44,7 @@
     }
 
     .rounded-button:hover {
-      background-color: #2980b9;
+      background-color: #363636; /* Dark button hover color */
       transform: scale(1.05);
     }
 
@@ -52,7 +54,7 @@
 
     /* Style for the home button */
     .home-button {
-      background-color: purple;
+      background-color: purple; /* Original home button color */
     }
   </style>
 </head>
@@ -60,11 +62,13 @@
   <div class="button-container">
     <!-- Home button with class "home-button" -->
     <a href="index.html" class="rounded-button home-button"><i class="fas fa-home"></i> Menu</a>
-    <!-- Other buttons -->
+    <!-- CoreBall button -->
     <a href="Extra/Games/CoreBall/nav.apusapps.com/br/game/coreball/index.html" class="rounded-button"><i class="fas fa-gamepad"></i> CoreBall</a>
-    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game</a>
+    <!-- Game buttons -->
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game1</a>
     <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game2</a>
     <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game3</a>
+    <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game4</a>
     <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game5</a>
     <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game6</a>
     <a href="#" class="rounded-button"><i class="fas fa-gamepad"></i> Game7</a>
